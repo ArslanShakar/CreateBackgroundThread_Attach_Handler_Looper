@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Separate Background thread Performs tasks with Optimized  like downloads songs list Using Handler and Looper with Download Thread. . ."
+        android:padding="10dp"
+        android:textSize="18sp"
+        />
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:id="@+id/progressBarHorizontal"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:indeterminate="true"
+        android:layout_margin="20dp"
+        android:indeterminateTint="@color/colorAccent"
+        android:visibility="invisible"
+        />
+
+    <Button
+        android:id="@+id/btRun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Download Songs Playlist"
+        android:onClick="runCode"
+        android:layout_margin="20dp"/>
+</LinearLayout>
